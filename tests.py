@@ -119,6 +119,14 @@ class TestBooksCollector:
         # Проверяем, что книга присутствует в списке избранных
         assert "Любимая книга" in favorites_books
 
+    def test_delete_book_from_favorites_deleted(self): # позитивная проверка на удаление книги из списка любимых книг
+        collector11 = BooksCollector()
+        collector11.add_new_book("Любимая книга")
+        collector11.add_book_in_favorites("Любимая книга")
+        collector11.delete_book_from_favorites("Любимая книга")
+        favorites_books = collector11.get_list_of_favorites_books()
+        assert "Любимая книга" not in favorites_books
+
     def test_delete_book_from_favorites_empty(self): # удаляем книгу из пустого списка избранных книг
         collector9 = BooksCollector()
         collector9.delete_book_from_favorites("Любимая книга")
