@@ -7,5 +7,6 @@
 6) test_get_books_genre_correct проверяет, что в словаре books_genre есть книга "Гордость и предубеждение и зомби" с жанром "Фантастика".
 7) test_get_books_for_children_correct проверяет, что в списке книг для детей есть только книги у которых нет возрастного рейтинга.
 8) test_add_book_in_favorites_added проверяет, что книга присутствует в списке избранных.
-9) test_delete_book_from_favorites_empty проверяет, что книга не присутствует в списке избранных.
-10) test_get_list_of_favorites_books_empty проверяет, что список любимых книг пуст.
+9) test_delete_book_from_favorites_deleted проверяет что добавленная книга удалилась из списка избранных.
+10) test_delete_book_from_favorites_empty проверяет, что книга не присутствует в списке избранных.
+11) test_get_list_of_favorites_books_empty проверяет, что список любимых книг пуст.
