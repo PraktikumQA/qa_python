@@ -41,7 +41,6 @@ class TestBooksCollector:
     def test_add_new_book_in_books_genre(self, name):
         collector2 = BooksCollector()
         collector2.add_new_book(name)
-        books_genre = collector2.get_books_genre()
         # Проверяем, что в словаре books_genre появилась добавленная книга
         assert name in collector2.get_books_genre()
 
